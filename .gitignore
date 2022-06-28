@@ -2,3 +2,4 @@ AR_Application/Library/
 AR_Application/Builds/
 AR_Application/Logs/
 AR_Application/Temp/
+*.cache
