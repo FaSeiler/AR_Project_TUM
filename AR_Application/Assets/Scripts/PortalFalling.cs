@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Portal : MonoBehaviour
+public class PortalFalling : MonoBehaviour
 {
     public Material tmpRed;
     public Material tmpGreen;
