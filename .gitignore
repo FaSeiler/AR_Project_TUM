@@ -1,5 +1,7 @@
 AR_Application/Library/
-AR_Application/Builds/
 AR_Application/Logs/
 AR_Application/Temp/
+AR_Application/Builds/
 *.cache
+AR_Application/UserSettings/Layouts/default-2021.dwlt
+
