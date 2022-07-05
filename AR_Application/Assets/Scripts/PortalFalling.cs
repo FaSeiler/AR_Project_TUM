@@ -17,6 +17,7 @@ public class PortalFalling : MonoBehaviour
 
         if (other.tag == "FallingObject")
         {
+            meshRenderer.material = tmpRed;
             Debug.Log("FallingObject Collision");
             other.gameObject.GetComponent<FallingObject>().DisableThisGO();
             nrCollidedObjects++;
@@ -30,7 +31,7 @@ public class PortalFalling : MonoBehaviour
     {
         meshRenderer.material = tmpGreen;
 
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(1.0f);
 
         meshRenderer.material = tmpRed;
     }
