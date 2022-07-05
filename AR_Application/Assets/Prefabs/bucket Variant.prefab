@@ -89,8 +89,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.45000002, y: 0.30351913, z: 0.45000002}
-  m_Center: {x: 0, y: 0.121759586, z: 0}
+  m_Size: {x: 0.45000002, y: 0.24067697, z: 0.45000002}
+  m_Center: {x: 0, y: 0.090338506, z: 0}
 --- !u!114 &114641307993784901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,6 +104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnerPrefab: {fileID: 2687203716830261460, guid: ac5718a86839e634aa7a0531432c5dc4, type: 3}
+  spawnerGO: {fileID: 0}
 --- !u!114 &6696903342237821057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,7 +120,14 @@ MonoBehaviour:
   tmpRed: {fileID: 2100000, guid: 08210b7a84d9d5a4fb85291d071612cc, type: 2}
   tmpGreen: {fileID: 2100000, guid: 63f63c7df60ae844a8fb197ed709054c, type: 2}
   meshRenderer: {fileID: 8649607718549646117}
+  meshRenderer2: {fileID: 4655700190760929597}
   nrCollidedObjects: 0
+  bucketTransform: {fileID: 0}
+--- !u!23 &4655700190760929597 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8032750206264916975, guid: f63812a12891e774f86257fec5dd999b, type: 3}
+  m_PrefabInstance: {fileID: 3451535674880799442}
+  m_PrefabAsset: {fileID: 0}
 --- !u!23 &8649607718549646117 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -2886872177830045193, guid: f63812a12891e774f86257fec5dd999b, type: 3}

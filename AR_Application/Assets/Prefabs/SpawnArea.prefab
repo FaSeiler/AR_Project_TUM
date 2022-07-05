@@ -115,6 +115,8 @@ MonoBehaviour:
   spawnablePrefab: {fileID: 4546048368857299522, guid: 4368e77076d4ad145b6b563eb45f0da5, type: 3}
   spawnRateSeconds: 1.5
   spawnArea: 1
+  yAxisOffset: 0.6
+  bucketGO: {fileID: 0}
 --- !u!1001 &2617378468240953174
 PrefabInstance:
   m_ObjectHideFlags: 0

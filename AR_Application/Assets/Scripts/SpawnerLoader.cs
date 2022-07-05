@@ -5,8 +5,8 @@ using UnityEngine;
 public class SpawnerLoader : MonoBehaviour
 {
     public GameObject spawnerPrefab;
-
-    private GameObject spawnerGO; // The spawned Spawner
+    [HideInInspector]
+    public GameObject spawnerGO; // The spawned Spawner
 
     private void OnEnable()
     {
