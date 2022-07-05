@@ -129,4 +129,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallSpeed: 0.1
-  spinSpeed: 0
+  spinSpeed: 50
+  explosionEffectGO: {fileID: 3768063171432548703, guid: a37c133e42114e54cae6210f7c0d5218, type: 3}
+  bucketGO: {fileID: 0}

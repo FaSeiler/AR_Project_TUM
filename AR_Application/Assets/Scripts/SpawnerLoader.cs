@@ -11,6 +11,7 @@ public class SpawnerLoader : MonoBehaviour
     private void OnEnable()
     {
         spawnerGO = Instantiate(spawnerPrefab, transform.position, transform.rotation);
+        spawnerGO.GetComponent<ObjectSpawner>().bucketGO = this.gameObject;
         spawnerGO.GetComponent<ObjectSpawner>().SetSpawnAreaPosition(this.gameObject.transform);
     }
 

@@ -12,6 +12,10 @@ public class ObjectSpawner : MonoBehaviour
     public float spawnRateSeconds = 2.0f;
     public float spawnArea = 1.0f;
     private const int amountToPool = 20;
+    public float yAxisOffset = 1.2f;
+
+
+    public GameObject bucketGO;
 
     private List<GameObject> spawnedPrefabsPool = new List<GameObject>();
 
@@ -42,7 +46,7 @@ public class ObjectSpawner : MonoBehaviour
 
     public void SetSpawnAreaPosition(Transform transform)
     {
-        Vector3 newPosition = new Vector3(transform.position.x, transform.position.y + 0.6f, transform.position.z);
+        Vector3 newPosition = new Vector3(transform.position.x, transform.position.y + yAxisOffset, transform.position.z);
         this.gameObject.transform.position = newPosition;
         this.gameObject.transform.rotation = transform.rotation;
 
@@ -76,6 +80,7 @@ public class ObjectSpawner : MonoBehaviour
         if (spawnedPrefabsPool.Count < amountToPool)
         {
             GameObject go = Instantiate(spawnablePrefab, newPosition, transform.rotation, transform);
+            go.GetComponent<FallingObject>().bucketGO = bucketGO;
             spawnedPrefabsPool.Add(go);
         }
         else

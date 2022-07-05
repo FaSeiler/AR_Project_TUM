@@ -11,6 +11,8 @@ public class PortalFalling : MonoBehaviour
 
     public int nrCollidedObjects = 0;
 
+    public Transform bucketTransform;
+
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Trigger Enter");
