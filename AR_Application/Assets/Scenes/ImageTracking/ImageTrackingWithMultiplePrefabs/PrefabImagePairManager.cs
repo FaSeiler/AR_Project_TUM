@@ -101,8 +101,76 @@ namespace UnityEngine.XR.ARFoundation.Samples
 
         void AssignPrefab(ARTrackedImage trackedImage)
         {
+            //Debug.Log("AymaneShadow: 1");   
+            //Debug.LogWarning("AymaneShadow: 1");   
+            //Debug.LogError("AymaneShadow: 1");   
+
             if (m_PrefabsDictionary.TryGetValue(trackedImage.referenceImage.guid, out var prefab))
+            {
                 m_Instantiated[trackedImage.referenceImage.guid] = Instantiate(prefab, trackedImage.transform);
+                // Debug.Log("AymaneShadow: Instantiated " + prefab.name + " at " + trackedImage.transform.position + " oriented " + trackedImage.transform.rotation);
+                //Vector3 pos = new Vector3(0, 0, 0);
+                Vector3 pos = trackedImage.transform.position;
+                Quaternion rot = Quaternion.identity;
+
+                //Debug.Log("AymaneShadow: Transform of tracked image is " + trackedImage.transform);
+                //Debug.Log("AymaneShadow: Position of tracked image is " + trackedImage.transform.position);
+                //Debug.Log("AymaneShadow: Rotation of tracked image is " + trackedImage.transform.rotation);
+
+                //m_Instantiated[trackedImage.referenceImage.guid] = Instantiate(prefab, pos, rot);   
+                Debug.Log("AymaneShadow: Instantiated " + prefab.name + " at " + pos + " oriented " + rot);
+
+                // if(prefab.name == "Balloon_Ghost(Mixed)")
+                // {
+                //     Debug.Log("AymaneShadow: This is actually a Ghost");
+
+                //     // Debug.Log("AymaneShadow: Ghost type is " + m_Instantiated[trackedImage.referenceImage.guid].GetType());
+                // }                
+
+                if (prefab.name.StartsWith("Balloon_Ghost(Mixed)"))
+                {
+                    Debug.Log("AymaneShadow: This is a Balloon Ghost");
+
+                    m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>().nextPosition = new Vector3(0, 0, 5);
+
+                    Debug.Log("AymaneShadow: Next real position of " + prefab.name + " is " + m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>().nextPosition);
+                }
+
+                // if (m_Instantiated.TryGetValue(trackedImage.referenceImage.guid, out var instantiatedPrefab))
+                // {
+
+
+                //     m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>().nextPosition = new Vector3(5, 0, 0);
+
+                //     Debug.Log("AymaneShadow: Next pre position of " + prefab.name + " is " + m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>().nextPosition);  
+
+
+                //     Debug.Log("AymaneShadow: This is a pre 2 Ghost"); 
+
+                //     m_Instantiated[trackedImage.referenceImage.guid].gameObject.GetComponent<Break_Ghost>().nextPosition = new Vector3(5, 0, 0);
+
+                //     Debug.Log("AymaneShadow: Next pre 2 position of " + prefab.name + " is " + m_Instantiated[trackedImage.referenceImage.guid].gameObject.GetComponent<Break_Ghost>().nextPosition);                      
+                // }                
+
+                // if(m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>() != null)
+                // {                
+                //     Debug.Log("AymaneShadow: This is a Ghost"); 
+
+                //     m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>().nextPosition = new Vector3(5, 0, 0);
+
+                //     Debug.Log("AymaneShadow: Next position of " + prefab.name + " is " + m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>().nextPosition);  
+                // }
+
+                // if(m_Instantiated[trackedImage.referenceImage.guid].gameObject.GetComponent<Break_Ghost>() != null)
+                // {                
+                //     Debug.Log("AymaneShadow: This is really a Ghost"); 
+
+                //     m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>().nextPosition = new Vector3(5, 0, 0);
+
+                //     Debug.Log("AymaneShadow: Next real position of " + prefab.name + " is " + m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>().nextPosition);  
+                // }                
+            }
+                
         }
 
         public GameObject GetPrefabForReferenceImage(XRReferenceImage referenceImage)
@@ -116,6 +184,16 @@ namespace UnityEngine.XR.ARFoundation.Samples
                 m_Instantiated[referenceImage.guid] = Instantiate(alternativePrefab, instantiatedPrefab.transform.parent);
                 Destroy(instantiatedPrefab);
             }
+        }
+
+        public GameObject getInstanceForReferenceImage(XRReferenceImage referenceImage)
+        {
+            if (m_Instantiated.TryGetValue(referenceImage.guid, out var instantiatedPrefab))
+            {
+                return m_Instantiated[referenceImage.guid];
+            }
+            else
+                return null;
         }
 
 #if UNITY_EDITOR
