@@ -107,6 +107,8 @@ public class ImageTrackingPrefabs : MonoBehaviour
         activePrefabs.Clear();
         UIDebugText.ResetLog();
 
+        bool goldFound = false;
+
         foreach (GameObject go in spawnedPrefabs.Values)
         {
             if (go.activeSelf)
@@ -114,6 +116,16 @@ public class ImageTrackingPrefabs : MonoBehaviour
                 activePrefabs.Add(go);
                 UIDebugText.AddLog("Active: " + go.name);
             }
+            if(go.name == "GoldCoins" && go.activeSelf) {
+                goldFound = true;
+                UIDebugText.WriteLog("gold found!!!");
+            }
+        }
+
+        Globals.goldShown = goldFound;
+
+        if(!Portal.realWorld && Globals.goldShown) {
+            UIDebugText.WriteLog("win!!");
         }
     }
 
