@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3287632179332575397}
   m_Layer: 0
   m_Name: Portal
-  m_TagString: Untagged
+  m_TagString: Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,7 +97,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 40
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1054099333489809367
 MonoBehaviour:
@@ -108,10 +108,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2934058695633617573}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90da95e94c447dd42aaae8be0f07a5fc, type: 3}
+  m_Script: {fileID: 11500000, guid: c9fe0ac1d7081a74f901aca70f5cb578, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  underworld: {fileID: 0}
 --- !u!82 &3287632179332575397
 AudioSource:
   m_ObjectHideFlags: 0

@@ -7,6 +7,8 @@ public class Portal : MonoBehaviour
     public static bool realWorld = true;
     GameObject underworld;
     AudioSource audioData;
+
+    private GameObject cam;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,7 @@ public class Portal : MonoBehaviour
             if (obj.name == "underworld")
             {
                 underworld = obj;
+                
                 // obj.SetActive(!obj.activeSelf);
             }
         }
@@ -39,6 +42,10 @@ public class Portal : MonoBehaviour
         // Portal.realWorld = !Portal.realWorld;
         // other.gameObject.GetComponent<ARCameraBackground>().enabled = Portal.realWorld;
         // underworld.SetActive(!Portal.realWorld);
+        // void turnOffSineWave() {
+        //     cam.GetComponent<SineWave>().enabled = false;
+        //     UIDebugText.WriteLog(cam.name);
+        // }
 
         if(other.gameObject.name.Equals("AR Camera") || other.gameObject.tag.Equals("MainCamera")) 
         {
@@ -49,11 +56,16 @@ public class Portal : MonoBehaviour
             }
             // audioData.Play(0);
             AudioSource.PlayClipAtPoint(audioData.clip, transform.position);
-            other.gameObject.GetComponent<ARCameraBackground>().enabled = Portal.realWorld;
+            cam = other.gameObject;
+            cam.GetComponent<ARCameraBackground>().enabled = Portal.realWorld;
+            // cam.GetComponent<SineWave>().enabled = true;
+            // Invoke("turnOffSineWave", 4);
 			Debug.Log("helllooooo");
             UIDebugText.AddLog("hellllloooo");
 
         }
+
+        
     }
     
 }
