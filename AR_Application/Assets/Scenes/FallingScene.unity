@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.02745098, g: 0.31764707, b: 0.5647059, a: 1}
+  m_Color: {r: 0.10980392, g: 0.3019608, b: 0.40392157, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1131,7 +1131,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32.75
+  m_fontSize: 31.6
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1396,7 +1396,8 @@ PrefabInstance:
     - target: {fileID: 7333506782244671292, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
       propertyPath: m_text
       value: 'Catch 10 falling knights with the bucket before the timer is over.
-        Then you are granted your reward. Otherwise try again!
+        Then you are granted your reward. Otherwise try again! Careful, when the
+        marker is no longer tracked, your progress is lost.
 
 
         Good luck!'
