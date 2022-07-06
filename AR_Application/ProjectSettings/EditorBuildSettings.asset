@@ -17,8 +17,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FallingScene.unity
     guid: 5a44790a98f6f914d97512f49cc8339b
+  - enabled: 1
+    path: Assets/Scenes/ImageTracking/BasicImageTracking/BasicImageTracking.unity
+    guid: e0b018a3c3b5cfd4c8e316706ec0a18c
+  - enabled: 1
+    path: Assets/Scenes/ImageTracking/ImageTrackingWithMultiplePrefabs/ImageTrackingWithMultiplePrefabs.unity
+    guid: a1bf0e7b9cece455f81c1d2731ba76e7
+  - enabled: 1
+    path: Assets/Scenes/ImageTracking/ImageTrackingWithMultiplePrefabs/ImageTrackingWithMultiplePrefabs_Aymane.unity
+    guid: 21840c8a1719afa46902e25801246005
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 95757864278d5f641901c7634ad951a7, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 67784c33f4fbf3f498c4469b2c49b46e, type: 2}
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 8e8e46c0a679ae545b0084e9300a5474, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 6cbf8ddf0cdaf874b8d12810605395db, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 61a1ae04327646c4e94c89ab1190b779, type: 2}
