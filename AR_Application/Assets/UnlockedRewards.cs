@@ -10,7 +10,7 @@ public class UnlockedRewards : MonoBehaviour
 
     void Start()
     {
-        string outputText = "Unlocked Levels: " + prefsManager.GetNrOfUnlockedLevels().ToString();
+        string outputText = "Crowns collected: " + prefsManager.GetNrOfUnlockedLevels().ToString();
         nrRewardsText.text = outputText;
     }
 

@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 351359002}
   - component: {fileID: 351359001}
   m_Layer: 5
-  m_Name: UnlockedRewards
+  m_Name: CrownsCollected_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -405,7 +405,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Unlocked Levels: 0'
+  m_text: 'Crowns collected: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1219,7 +1219,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.35
+  m_fontSize: 31.4
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1482,7 +1482,7 @@ GameObject:
   - component: {fileID: 1425964614}
   - component: {fileID: 1425964613}
   m_Layer: 5
-  m_Name: Backround_Score
+  m_Name: Backround_Crowns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2040,6 +2040,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 597504340659280618, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1027921648993839074, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2056,9 +2060,13 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2758217489695489934, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -210.37042
+      objectReference: {fileID: 0}
     - target: {fileID: 2793720000075480453, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3650243364636409715, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
       propertyPath: m_Pivot.x
@@ -2168,9 +2176,17 @@ PrefabInstance:
       propertyPath: rewardId
       value: -99
       objectReference: {fileID: 0}
+    - target: {fileID: 3979879607123169775, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6415938491630953858, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7957470296515992145, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3694760715755263474, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}

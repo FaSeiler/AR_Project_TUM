@@ -567,6 +567,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 61825608821111524, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 833995346099226039, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
       propertyPath: rotationVector.x
       value: 0
@@ -686,6 +690,16 @@ PrefabInstance:
     - target: {fileID: 3694760715755263474, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
       propertyPath: rewardId
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7333506782244671292, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
+      propertyPath: m_text
+      value: "Find the key marker and the chest marker. If you have found both, scan
+        them simulatniously with your camera and wait until the chest is unlocked.
+        Then you will be granted your reward! \n\nGood Luck!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7333506782244671292, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}

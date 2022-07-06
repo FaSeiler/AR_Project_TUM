@@ -82,7 +82,7 @@ public class FallingObjectController : MonoBehaviour
 
         if (scoreText.gameObject.activeSelf == true)
         {
-            scoreText.text = score.ToString();
+            scoreText.text = "Score: " + score.ToString();
         }
     }
 
