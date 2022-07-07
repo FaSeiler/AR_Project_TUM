@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "172.26.0.155:46497",
         "name": "com.DefaultCompany.AR_Application",
-        "processId": 15339,
+        "processId": 10050,
         "exited": false
     },
     "m_SelectedPriority": 1,
@@ -186,6 +186,24 @@
             "deviceId": "172.26.0.155:46497",
             "name": "com.DefaultCompany.AR_Application",
             "processId": 15339,
+            "exited": false
+        },
+        {
+            "deviceId": "172.26.0.155:46497",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 30976,
+            "exited": false
+        },
+        {
+            "deviceId": "172.26.0.155:46497",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 5322,
+            "exited": false
+        },
+        {
+            "deviceId": "172.26.0.155:46497",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 10050,
             "exited": false
         }
     ],
