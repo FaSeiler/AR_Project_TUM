@@ -21,9 +21,9 @@ MonoBehaviour:
       m_GuidLow: 4797409627778464873
       m_GuidHigh: 642605212730827393
     m_SerializedTextureGuid:
-      m_GuidLow: 8476939678025924846
-      m_GuidHigh: 5945424398058736603
-    m_Size: {x: 0.321875, y: 0.321875}
+      m_GuidLow: 12944747644984059711
+      m_GuidHigh: 15243447892693313163
+    m_Size: {x: 0.1, y: 0.1}
     m_SpecifySize: 1
     m_Name: bucket Variant
     m_Texture: {fileID: 0}

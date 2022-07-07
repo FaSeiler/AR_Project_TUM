@@ -21,8 +21,8 @@ MonoBehaviour:
       m_GuidLow: 4797409627778464873
       m_GuidHigh: 642605212730827393
     m_SerializedTextureGuid:
-      m_GuidLow: 8476939678025924846
-      m_GuidHigh: 5945424398058736603
+      m_GuidLow: 10120899346169375331
+      m_GuidHigh: 18001106401917403978
     m_Size: {x: 0.1, y: 0.1}
     m_SpecifySize: 1
     m_Name: key
@@ -31,8 +31,8 @@ MonoBehaviour:
       m_GuidLow: 4865113877081478560
       m_GuidHigh: 5398289722697965996
     m_SerializedTextureGuid:
-      m_GuidLow: 4288726714294284973
-      m_GuidHigh: 5557566053925910554
+      m_GuidLow: 5193907690087734665
+      m_GuidHigh: 6585982776462236504
     m_Size: {x: 0.1, y: 0.1}
     m_SpecifySize: 1
     m_Name: chest
