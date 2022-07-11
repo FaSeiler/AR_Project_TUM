@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "172.26.0.155:46497",
+    "m_SelectedDeviceId": "172.26.0.139:40165",
     "m_SelectedPackage": {
-        "deviceId": "172.26.0.155:46497",
+        "deviceId": "172.26.0.139:40165",
         "name": "com.DefaultCompany.AR_Application",
-        "processId": 10050,
+        "processId": 20124,
         "exited": false
     },
     "m_SelectedPriority": 1,
@@ -204,6 +204,90 @@
             "deviceId": "172.26.0.155:46497",
             "name": "com.DefaultCompany.AR_Application",
             "processId": 10050,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR1219XBM",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 28442,
+            "exited": true
+        },
+        {
+            "deviceId": "R5CR1219XBM",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 32510,
+            "exited": true
+        },
+        {
+            "deviceId": "R5CR1219XBM",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 5692,
+            "exited": true
+        },
+        {
+            "deviceId": "172.26.0.139:40165",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 3187,
+            "exited": true
+        },
+        {
+            "deviceId": "172.26.0.139:40165",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 6726,
+            "exited": true
+        },
+        {
+            "deviceId": "172.26.0.139:40165",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 8163,
+            "exited": true
+        },
+        {
+            "deviceId": "172.26.0.139:40165",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 9780,
+            "exited": true
+        },
+        {
+            "deviceId": "172.26.0.139:40165",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 10612,
+            "exited": false
+        },
+        {
+            "deviceId": "172.26.0.139:40165",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 13735,
+            "exited": false
+        },
+        {
+            "deviceId": "172.26.0.139:40165",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 14753,
+            "exited": false
+        },
+        {
+            "deviceId": "172.26.0.139:40165",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 16836,
+            "exited": false
+        },
+        {
+            "deviceId": "172.26.0.139:40165",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 18662,
+            "exited": false
+        },
+        {
+            "deviceId": "172.26.0.139:40165",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 19288,
+            "exited": false
+        },
+        {
+            "deviceId": "172.26.0.139:40165",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 20124,
             "exited": false
         }
     ],

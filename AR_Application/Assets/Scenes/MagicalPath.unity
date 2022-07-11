@@ -159,14 +159,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_PrefabsList:
-  - imageGuid: f0340be5-710e-49ff-bc70-45f1315b9202
-    imagePrefab: {fileID: 6916502901855112170, guid: e22b43a8fcdab413bb4f52f5076f759e, type: 3}
-  - imageGuid: 2c29eeed-d95c-4111-b724-80f9ff10ce86
-    imagePrefab: {fileID: 2804028924010200506, guid: 379785de5e39005469c875710d3cc5a7, type: 3}
-  - imageGuid: aae75228-1973-4dc0-b7a2-53d1566ee402
-    imagePrefab: {fileID: 3279860958548870494, guid: 2584331523bd14e8898965d93034efdb, type: 3}
   - imageGuid: 8e264c69-d0b0-4526-b439-bc69a1bac9be
     imagePrefab: {fileID: 2911597060502401789, guid: 04f7a9876908a5f41adfac2b9668eaab, type: 3}
+  - imageGuid: a9abdcf5-a011-432b-9965-153e5ad1d020
+    imagePrefab: {fileID: 3583446600489375370, guid: c371fe760b7072d45b46837cf69f1a5b, type: 3}
+  - imageGuid: 5ee207d5-8455-4a9f-adf1-e2eadc3bf88f
+    imagePrefab: {fileID: 5696236628496418158, guid: febe8a1115b114d4aab8b7c0695e1e15, type: 3}
+  - imageGuid: c6b52008-7ea2-4c47-92d2-bc729af7489f
+    imagePrefab: {fileID: 6655162099084151984, guid: cee628d10a368754ca00bdd9ae7f9f2f, type: 3}
   m_ImageLibrary: {fileID: 11400000, guid: c86e375d7e7430442a1104e88fa21f21, type: 2}
 --- !u!114 &143437354
 MonoBehaviour:
@@ -319,7 +319,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96e45e1190fe154489d0eae350e0fbf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CameraAR: {fileID: 1718838894}
 --- !u!114 &191042751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1038,6 +1037,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1053308131241908725, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.2680664
+      objectReference: {fileID: 0}
+    - target: {fileID: 2758217489695489934, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2758217489695489934, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -210.37042
+      objectReference: {fileID: 0}
     - target: {fileID: 3650243364636409715, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1214,7 +1225,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96e45e1190fe154489d0eae350e0fbf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CameraAR: {fileID: 1718838894}
 --- !u!114 &1586664992
 MonoBehaviour:
   m_ObjectHideFlags: 0

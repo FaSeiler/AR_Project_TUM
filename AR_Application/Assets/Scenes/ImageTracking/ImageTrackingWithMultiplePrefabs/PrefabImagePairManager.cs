@@ -110,15 +110,15 @@ namespace UnityEngine.XR.ARFoundation.Samples
                 m_Instantiated[trackedImage.referenceImage.guid] = Instantiate(prefab, trackedImage.transform);
                 // Debug.Log("AymaneShadow: Instantiated " + prefab.name + " at " + trackedImage.transform.position + " oriented " + trackedImage.transform.rotation);
                 //Vector3 pos = new Vector3(0, 0, 0);
-                Vector3 pos = trackedImage.transform.position;
-                Quaternion rot = Quaternion.identity;
+                // Vector3 pos = trackedImage.transform.position;
+                // Quaternion rot = Quaternion.identity;
 
                 //Debug.Log("AymaneShadow: Transform of tracked image is " + trackedImage.transform);
                 //Debug.Log("AymaneShadow: Position of tracked image is " + trackedImage.transform.position);
                 //Debug.Log("AymaneShadow: Rotation of tracked image is " + trackedImage.transform.rotation);
 
                 //m_Instantiated[trackedImage.referenceImage.guid] = Instantiate(prefab, pos, rot);   
-                Debug.Log("AymaneShadow: Instantiated " + prefab.name + " at " + pos + " oriented " + rot);
+                Debug.LogWarning("AymaneShadow: Instantiated " + prefab.name + ".");
 
                 // if(prefab.name == "Balloon_Ghost(Mixed)")
                 // {
@@ -127,48 +127,72 @@ namespace UnityEngine.XR.ARFoundation.Samples
                 //     // Debug.Log("AymaneShadow: Ghost type is " + m_Instantiated[trackedImage.referenceImage.guid].GetType());
                 // }                
 
-                if (prefab.name.StartsWith("Balloon_Ghost(Mixed)"))
+                if (prefab.name.StartsWith("Balloon_Ghost(Mixed)_red"))
                 {
-                    Debug.Log("AymaneShadow: This is a Balloon Ghost");
+                    Debug.Log("AymaneShadow: This is a red Balloon Ghost. It is the first Guide");
+                    
+                    GetComponent<DynamicPrefab>().m_Guide = DynamicPrefab.Guide.ChangeToSecondGuide; 
+                    GetComponent<DynamicPrefab>().distanceLeft = new Vector3(1.5f, GetComponent<DynamicPrefab>().distanceLeft.y, GetComponent<DynamicPrefab>().distanceLeft.z);   
 
-                    m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>().nextPosition = new Vector3(0, 0, 5);
+                    // m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>().nextPosition = new Vector3(0, 0, 5);
 
-                    Debug.Log("AymaneShadow: Next real position of " + prefab.name + " is " + m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>().nextPosition);
+                    // Debug.Log("AymaneShadow: Next real position of " + prefab.name + " is " + m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>().nextPosition);
                 }
 
-                // if (m_Instantiated.TryGetValue(trackedImage.referenceImage.guid, out var instantiatedPrefab))
-                // {
+                if (prefab.name.StartsWith("Balloon_Ghost(Mixed)_pink"))
+                {
+                    Debug.Log("AymaneShadow: This is a pink Balloon Ghost. It is the second Guide");
 
+                    GetComponent<DynamicPrefab>().m_Guide = DynamicPrefab.Guide.ChangeToThirdGuide; 
+                    GetComponent<DynamicPrefab>().distanceLeft = new Vector3(GetComponent<DynamicPrefab>().distanceLeft.x, GetComponent<DynamicPrefab>().distanceLeft.y, 1.0f);                       
 
-                //     m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>().nextPosition = new Vector3(5, 0, 0);
+                    foreach (var instantiatedObject in m_Instantiated)
+                    {
+                        if(instantiatedObject.Value.name.StartsWith("Balloon_Ghost(Mixed)_red"))
+                        {
+                            Debug.Log("AymaneShadow: Red Balloon Ghost Found.");
+                            instantiatedObject.Value.GetComponent<Break_Ghost>().break_Ghost();
+                        }
+                    }                    
 
-                //     Debug.Log("AymaneShadow: Next pre position of " + prefab.name + " is " + m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>().nextPosition);  
+                    // m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>().nextPosition = new Vector3(0, 0, 5);
 
+                    // Debug.Log("AymaneShadow: Next real position of " + prefab.name + " is " + m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>().nextPosition);
+                }        
 
-                //     Debug.Log("AymaneShadow: This is a pre 2 Ghost"); 
+                if (prefab.name.StartsWith("Balloon_Ghost(Mixed)_yellow"))
+                {
+                    Debug.Log("AymaneShadow: This is a yellow Balloon Ghost. It is the third Guide");
 
-                //     m_Instantiated[trackedImage.referenceImage.guid].gameObject.GetComponent<Break_Ghost>().nextPosition = new Vector3(5, 0, 0);
+                    GetComponent<DynamicPrefab>().m_Guide = DynamicPrefab.Guide.ChangeToFourthGuide; 
+                    GetComponent<DynamicPrefab>().distanceLeft = new Vector3(1.5f, GetComponent<DynamicPrefab>().distanceLeft.y, GetComponent<DynamicPrefab>().distanceLeft.z);                        
 
-                //     Debug.Log("AymaneShadow: Next pre 2 position of " + prefab.name + " is " + m_Instantiated[trackedImage.referenceImage.guid].gameObject.GetComponent<Break_Ghost>().nextPosition);                      
-                // }                
+                    foreach (var instantiatedObject in m_Instantiated)
+                    {
+                        if(instantiatedObject.Value.name.StartsWith("Balloon_Ghost(Mixed)_pink"))
+                        {
+                            Debug.Log("AymaneShadow: pink Balloon Ghost Found.");
+                            instantiatedObject.Value.GetComponent<Break_Ghost>().break_Ghost();
+                        }
+                    }    
+                }                          
 
-                // if(m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>() != null)
-                // {                
-                //     Debug.Log("AymaneShadow: This is a Ghost"); 
+                if (prefab.name.StartsWith("Balloon_Ghost(Mixed)_brown"))
+                {
+                    Debug.Log("AymaneShadow: This is a brown Balloon Ghost. It is the fourth Guide");
 
-                //     m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>().nextPosition = new Vector3(5, 0, 0);
+                    GetComponent<DynamicPrefab>().m_Guide = DynamicPrefab.Guide.ChangeToFirstGuide; 
+                    GetComponent<DynamicPrefab>().distanceLeft = new Vector3(GetComponent<DynamicPrefab>().distanceLeft.x, GetComponent<DynamicPrefab>().distanceLeft.y, 2f);                      
 
-                //     Debug.Log("AymaneShadow: Next position of " + prefab.name + " is " + m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>().nextPosition);  
-                // }
-
-                // if(m_Instantiated[trackedImage.referenceImage.guid].gameObject.GetComponent<Break_Ghost>() != null)
-                // {                
-                //     Debug.Log("AymaneShadow: This is really a Ghost"); 
-
-                //     m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>().nextPosition = new Vector3(5, 0, 0);
-
-                //     Debug.Log("AymaneShadow: Next real position of " + prefab.name + " is " + m_Instantiated[trackedImage.referenceImage.guid].GetComponent<Break_Ghost>().nextPosition);  
-                // }                
+                    foreach (var instantiatedObject in m_Instantiated)
+                    {
+                        if(instantiatedObject.Value.name.StartsWith("Balloon_Ghost(Mixed)_yellow"))
+                        {
+                            Debug.Log("AymaneShadow: yellow Balloon Ghost Found.");
+                            instantiatedObject.Value.GetComponent<Break_Ghost>().break_Ghost();
+                        }
+                    }    
+                }              
             }
                 
         }

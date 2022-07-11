@@ -18,36 +18,6 @@ MonoBehaviour:
     m_Storage: []
   m_Images:
   - m_SerializedGuid:
-      m_GuidLow: 5332104792803380197
-      m_GuidHigh: 185310804734996668
-    m_SerializedTextureGuid:
-      m_GuidLow: 3045804918016700000
-      m_GuidHigh: 12263723139385508072
-    m_Size: {x: 0.254, y: 0.16891992}
-    m_SpecifySize: 1
-    m_Name: Rafflesia
-    m_Texture: {fileID: 2800000, guid: 8185ee60df6f2a44e8c0cf22387f31aa, type: 3}
-  - m_SerializedGuid:
-      m_GuidLow: 4688767676970561261
-      m_GuidHigh: 9713720137873368247
-    m_SerializedTextureGuid:
-      m_GuidLow: 16430241910255274575
-      m_GuidHigh: 3143750354108030859
-    m_Size: {x: 0.1, y: 0.1}
-    m_SpecifySize: 1
-    m_Name: Logo
-    m_Texture: {fileID: 2800000, guid: 5a804a4ff1f7e4038b1f1e6f4ad8a02b, type: 3}
-  - m_SerializedGuid:
-      m_GuidLow: 5602505921028117032
-      m_GuidHigh: 208412801924047543
-    m_SerializedTextureGuid:
-      m_GuidLow: 288924497207985411
-      m_GuidHigh: 4143232447317295274
-    m_Size: {x: 0.104775, y: 0.104775}
-    m_SpecifySize: 1
-    m_Name: QRCode
-    m_Texture: {fileID: 2800000, guid: a6fd8503774c0402aa403884f5b77f39, type: 3}
-  - m_SerializedGuid:
       m_GuidLow: 4982899494449728617
       m_GuidHigh: 13747724539951593908
     m_SerializedTextureGuid:
@@ -57,3 +27,33 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: One
     m_Texture: {fileID: 2800000, guid: d1879707d69d24adfb421bde69c92c94, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4840138222261230837
+      m_GuidHigh: 2364619989888361881
+    m_SerializedTextureGuid:
+      m_GuidLow: 8384093242107071099
+      m_GuidHigh: 13653593495684243370
+    m_Size: {x: 0.1, y: 0.1}
+    m_SpecifySize: 1
+    m_Name: two
+    m_Texture: {fileID: 2800000, guid: 038b8a7b4862745aaadfd7c9f14e7bbd, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5377161982302619605
+      m_GuidHigh: 10374107561667522989
+    m_SerializedTextureGuid:
+      m_GuidLow: 13741797997448304137
+      m_GuidHigh: 10055820516970954072
+    m_Size: {x: 0.14, y: 0.24880435}
+    m_SpecifySize: 1
+    m_Name: 3
+    m_Texture: {fileID: 2800000, guid: b5149609ac78beb4587d236f7b738d8b, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5496501107812540424
+      m_GuidHigh: 11477695893075710610
+    m_SerializedTextureGuid:
+      m_GuidLow: 2721320466039096081
+      m_GuidHigh: 11458445791734909001
+    m_Size: {x: 0.24, y: 0.2074074}
+    m_SpecifySize: 1
+    m_Name: 4
+    m_Texture: {fileID: 2800000, guid: b242c311128b25c449c86df6bc93049f, type: 3}
