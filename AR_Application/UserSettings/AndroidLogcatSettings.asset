@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "172.26.0.139:40165",
+    "m_SelectedDeviceId": "172.26.0.146:34785",
     "m_SelectedPackage": {
-        "deviceId": "172.26.0.139:40165",
-        "name": "com.DefaultCompany.AR_Application",
-        "processId": 20124,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 1,
@@ -289,6 +289,36 @@
             "name": "com.DefaultCompany.AR_Application",
             "processId": 20124,
             "exited": false
+        },
+        {
+            "deviceId": "172.26.0.146:34785",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 11805,
+            "exited": true
+        },
+        {
+            "deviceId": "172.26.0.146:34785",
+            "name": "com.sec.android.app.launcher",
+            "processId": 2294,
+            "exited": false
+        },
+        {
+            "deviceId": "172.26.0.146:34785",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 22319,
+            "exited": true
+        },
+        {
+            "deviceId": "172.26.0.146:34785",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 10003,
+            "exited": true
+        },
+        {
+            "deviceId": "172.26.0.146:34785",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 11863,
+            "exited": true
         }
     ],
     "m_Tags": {
