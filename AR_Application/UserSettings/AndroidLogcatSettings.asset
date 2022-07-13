@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "172.26.0.146:34785",
+    "m_SelectedDeviceId": "MUN0218C29002639",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "MUN0218C29002639",
+        "name": "com.DefaultCompany.AR_Application",
+        "processId": 27915,
         "exited": false
     },
     "m_SelectedPriority": 1,
@@ -319,6 +319,42 @@
             "name": "com.DefaultCompany.AR_Application",
             "processId": 11863,
             "exited": true
+        },
+        {
+            "deviceId": "MUN0218C29002639",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 28715,
+            "exited": false
+        },
+        {
+            "deviceId": "MUN0218C29002639",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 6627,
+            "exited": false
+        },
+        {
+            "deviceId": "MUN0218C29002639",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 12759,
+            "exited": false
+        },
+        {
+            "deviceId": "MUN0218C29002639",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 16752,
+            "exited": false
+        },
+        {
+            "deviceId": "MUN0218C29002639",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 24195,
+            "exited": false
+        },
+        {
+            "deviceId": "MUN0218C29002639",
+            "name": "com.DefaultCompany.AR_Application",
+            "processId": 27915,
+            "exited": false
         }
     ],
     "m_Tags": {
@@ -372,7 +408,7 @@
         "Behavior": 0
     },
     "m_FilterOptions": {
-        "m_Filter": "AymaneShadow",
+        "m_Filter": "",
         "m_UseRegularExpressions": false,
         "m_MatchCase": false
     },

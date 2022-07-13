@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.26669943, g: 0.40927383, b: 0.308478, a: 1}
+  m_IndirectSpecularColor: {r: 0.2667001, g: 0.4092745, b: 0.30847874, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -927,9 +927,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placeablePrefabs:
-  - {fileID: 2881497522080586126, guid: 0aa5a9de7653f624e8f2c9d8e322d1b3, type: 3}
-  - {fileID: 1950871307682000, guid: 01348926c7cbb3347a006c37204131c3, type: 3}
   - {fileID: 2934058695633617573, guid: 94592f37cb2bb11448bde981ac5f4113, type: 3}
+  - {fileID: 1950871307682000, guid: 01348926c7cbb3347a006c37204131c3, type: 3}
   trackedImageManager: {fileID: 0}
   activePrefabs: []
 --- !u!224 &976475525
@@ -991,7 +990,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 1901507966}
-  orc: {fileID: 1538148001}
 --- !u!114 &976475529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2070,6 +2068,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1053308131241908725, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.2680664
+      objectReference: {fileID: 0}
     - target: {fileID: 1597345678297841150, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2077,6 +2079,14 @@ PrefabInstance:
     - target: {fileID: 2758217489695489934, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2758217489695489934, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2758217489695489934, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -210.37042
       objectReference: {fileID: 0}
     - target: {fileID: 2793720000075480453, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
       propertyPath: m_RootOrder
@@ -2185,6 +2195,14 @@ PrefabInstance:
     - target: {fileID: 3979879607123169775, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7333506782244671292, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
+      propertyPath: m_text
+      value: Haguk has lost something valuable :(
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822468019337984674, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
+      propertyPath: m_text
+      value: Underworld
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}

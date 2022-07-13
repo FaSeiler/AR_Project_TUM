@@ -60,8 +60,6 @@ public class Portal : MonoBehaviour
             cam.GetComponent<ARCameraBackground>().enabled = Portal.realWorld;
             // cam.GetComponent<SineWave>().enabled = true;
             // Invoke("turnOffSineWave", 4);
-			Debug.Log("helllooooo");
-            UIDebugText.AddLog("hellllloooo");
 
         }
 

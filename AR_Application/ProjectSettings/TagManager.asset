@@ -7,6 +7,7 @@ TagManager:
   - FallingObject
   - Interact
   - Portal
+  - Gold
   layers:
   - Default
   - TransparentFX
