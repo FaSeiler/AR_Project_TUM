@@ -18,7 +18,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
         string m_InfoMessage = "";
 
         public Vector3 distanceLeft;
-        const float DISTANCE_INCREMENT = 0.01f;
+        const float DISTANCE_INCREMENT = 0.0175f;
 
         // bool firstTime = true;
 

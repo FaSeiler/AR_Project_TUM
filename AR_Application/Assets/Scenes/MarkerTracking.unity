@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.2667001, g: 0.4092745, b: 0.30847874, a: 1}
+  m_IndirectSpecularColor: {r: 0.26669943, g: 0.40927383, b: 0.308478, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1761,7 +1761,7 @@ MonoBehaviour:
   m_FocusMode: -1
   m_LightEstimationMode: -1
   m_AutoFocus: 1
-  m_LightEstimation: 1
+  m_LightEstimation: 0
   m_FacingDirection: 1
 --- !u!114 &1844966833
 MonoBehaviour:
@@ -2191,6 +2191,10 @@ PrefabInstance:
     - target: {fileID: 3650243365320705511, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3650243365320705528, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3979879607123169775, guid: 2ff24c4c5a5d828489e5f6f51fb66f22, type: 3}
       propertyPath: m_RootOrder

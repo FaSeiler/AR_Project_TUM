@@ -60,7 +60,7 @@ public class checkReward : MonoBehaviour
             reward.GetComponent<Reward>().ShowReward(go.transform);
             this.gameObject.GetComponent<ImageTrackingPrefabs>().StopTracking();
             goldCoins = GameObject.FindGameObjectWithTag("Gold");
-            goldCoins.SetActive(false);
+            // goldCoins.SetActive(false);
             Globals.goldShown = false;
             
         }

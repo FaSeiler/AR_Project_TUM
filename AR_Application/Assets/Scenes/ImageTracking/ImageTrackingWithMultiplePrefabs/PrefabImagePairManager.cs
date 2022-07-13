@@ -111,7 +111,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
                     Debug.Log("AymaneShadow: This is a red Balloon Ghost. It is the first Guide.");
                     
                     GetComponent<DynamicPrefab>().m_Guide = DynamicPrefab.Guide.ChangeToSecondGuide;
-                    GetComponent<DynamicPrefab>().distanceLeft = new Vector3(1.5f * 5, 0, 0);   
+                    GetComponent<DynamicPrefab>().distanceLeft = new Vector3(15, 0, 0);   
                 }
 
                 if (prefab.name.StartsWith("Balloon_Ghost(Mixed)_pink"))
@@ -119,7 +119,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
                     Debug.Log("AymaneShadow: This is a pink Balloon Ghost. It is the second Guide.");
 
                     GetComponent<DynamicPrefab>().m_Guide = DynamicPrefab.Guide.ChangeToThirdGuide; 
-                    GetComponent<DynamicPrefab>().distanceLeft = new Vector3(0, 0, -1.0f * 5);                       
+                    GetComponent<DynamicPrefab>().distanceLeft = new Vector3(0, 0, 15);                       
 
                     foreach (var instantiatedObject in m_Instantiated)
                     {
@@ -135,7 +135,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
                     Debug.Log("AymaneShadow: This is a yellow Balloon Ghost. It is the third Guide.");
 
                     GetComponent<DynamicPrefab>().m_Guide = DynamicPrefab.Guide.ChangeToFourthGuide; 
-                    GetComponent<DynamicPrefab>().distanceLeft = new Vector3(1.5f * 5, 0, 0);                        
+                    GetComponent<DynamicPrefab>().distanceLeft = new Vector3(12, 0, 0);                        
 
                     foreach (var instantiatedObject in m_Instantiated)
                     {
@@ -151,7 +151,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
                     Debug.Log("AymaneShadow: This is a brown Balloon Ghost. It is the fourth Guide.");
 
                     GetComponent<DynamicPrefab>().m_Guide = DynamicPrefab.Guide.ChangeToTreasureFound; 
-                    GetComponent<DynamicPrefab>().distanceLeft = new Vector3(0, 0, 2f * 5);                      
+                    GetComponent<DynamicPrefab>().distanceLeft = new Vector3(0, 2.1f, 0);                      
 
                     foreach (var instantiatedObject in m_Instantiated)
                     {
